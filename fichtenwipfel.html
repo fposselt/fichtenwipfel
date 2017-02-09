@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Peter Fichtenwipfel</title>
+		<meta name="description" content="Peter Fichtenwipfel">
+
+<!--		<link rel="stylesheet" href="css/styles.css?v=1.0"> -->
+
+<!-- https://github.com/fposselt/fichtenwipfel.git -->
+
+<style>
+
+/* :::::: general :::::: */
+body { font-family: Verdana,sans-serif; line-height: 1.5; letter-spacing: 3px; font-size: 100%; }
+header { text-align:center; font-weight: bold;}
+h1 { font-weight: bold; }
+/* section {border-style:dotted solid; border-width:1px; border-color:red green blue yellow; } */
+
+
+
+
+a:link    { color: grey; text-decoration: none; }
+a:visited { color: grey; text-decoration: none; }
+a:hover   { color: orange; text-decoration: overline; text-shadow: 1px 1px grey; }
+a:active  { color: hotpink; text-decoration: underline; text-shadow: 1px 1px grey; }
+
+.quote_source { letter-spacing: 2px; font-size: 0.875em; }
+
+
+/* :::::: section and subsection levels :::::: */
+.h1-section { max-width:909px; margin:auto; }
+.h2-section {}
+.h3-section {}
+
+.center-container { border-style:solid; border-width:1px; border-color:blue; text-align:center; }
+.floating-subsection  { display: inline-block; max-width:304px; vertical-align:top; text-align:left; }
+
+
+/* :::::: paper shadow frame CLEAN - min width 302px :::::: */
+.f_container  { position: relative; z-index:-9; min-width: 304px; 
+		max-width:677px; margin:auto; }
+.f_content    { padding-top:26px; padding-bottom:55px; padding-left:27px; padding-right:27px; z-index:0; }
+.f_top_bar    { background-image: url("pixies/frame_top_bar.png"); background-size: 100% 7px;
+		position: absolute; top:0px; width: 100%; height:7px; z-index:-4; }
+.f_left_bar   { background-image: url("pixies/frame_left_bar.png");  background-size: 6px 100%;
+		position: absolute; left:0px; height: 100%;  width:6px; z-index:-4; }
+.f_right_bar  { background-image: url("pixies/frame_right_bar.png"); background-size: 6px 100%;
+		position: absolute; right:0px; height: 100%;  width:6px; z-index:-4; }
+.f_left_top_corner 	{ background-image: url("pixies/frame_top_left_corner.png"); background-size: 9px 9px;
+		position: absolute; left:0px; top:0px; width:9px; height:9px; z-index:-2; }
+.f_right_top_corner 	{ background-image: url("pixies/frame_top_right_corner.png"); background-size: 9px 9px;
+		position: absolute; right:0px; top:0px; width:9px; height:9px; z-index:-2; }
+.f_bottom_bar { background-image: url("pixies/frame_bottom_bar.png"); background-size: 100% 27px;
+		position: absolute; width: 100%; bottom:0px; height:27px; z-index:-4;}
+.f_right_bottom_corner  { 
+		background-image: url("pixies/frame_bottom_right_corner_151.png"); background-size: 151px 27px;
+		position: absolute; right:0px; bottom:0px; width:151px; height:27px; z-index:-2; }
+.f_left_bottom_corner   { 
+		background-image: url("pixies/frame_bottom_left_corner_151.png"); background-size: 151px 27px;
+		position: absolute; left:0px; bottom:0px; width:151px; height:27px; z-index:-2; }
+
+
+</style>
+
+<!--
+
+
+
+/* floating subsections in .container */
+.floating-subsection  { max-width:330px; float:left; margin:auto;}
+.end-floating-subsections { clear: left; }
+
+
+
+/*
+.h2-section { float: left;    max-width: 33%;    margin: auto; }
+.container-h2-section {
+  width: 70%;
+  background: #222;
+  position: absolute;
+  
+  margin: 0px 0 0 -35%; 
+  left: 50%;
+}
+.endof-h2-section {    clear: left;  }
+.clearfix {overflow: auto;}
+*/
+
+/*
+
+font-family: Verdana,sans-serif;
+line-height: 1.5;
+letter-spacing: 3px;
+
+    max-width: 500px;    margin: auto;    
+    margin: auto;    float: right;    
+ --
+
+.container {
+  height: 300px;
+  width: 70%;
+  background: #eee;
+  margin: 10px auto;
+  position: relative;
+}
+
+.box {
+  height: 100px;
+  width: 70%;
+  background: #222;
+  position: absolute;
+  
+  /*Centering Method 2*/
+  margin: 0px 0 0 -35%; /* Half of 70% */
+  left: 50%;
+*/
+
+*/
+-->
+
+
+
+	</head>
+	<body>
+		
+	
+		<header>
+			<section>	Header: a pic, I guess
+			</section>
+			<nav>
+				<a href="#about">about</a> :: <a href="#cv">cv</a> :: <a href="#statement">statement</a> :: <a href="#work">work</a> :: <a href="#projects">projects</a> :: <a href="#contact">contact</a> :: <a href="#website">website</a>
+			</nav>	
+		</header>
+
+
+
+<section class="h1-section"><a id="test"></a><h1>TEST: Section h1</h1>
+	<p>Test: Section p. Section p. Section p. Section p. Section p. Section p. Section p. Section p. 
+	Section p. Section p. Section p. Section p. Section p. Section p. Section p. Section p. 
+	Section p. Section p. Section p. Section p. Section p. Section p. Section p. Section p. Section br </br>
+	Section p. Section p. Section p. Section p. Section p. Section p. Section p. Section p. Section p. Section
+ 	p. Section p. Section p. Section p. Section p. Section p. Section p. Section p. Section p. </p>
+
+<div class="center-container">
+	<section class="h2-section floating-subsection"><h1>TEST: Section h1</h1>
+	<p>Test: Section p. Section p. Section p. Section p. Section p. Section p. Section p. Section p. 
+	Section p. Section p. Section p. Section p. Section p. Section p. Section p. Section p. 
+	Section p. Section p. Section p. Section p. Section p. Section p. Section p. Section p. Section br </br>
+	Section p. Section p. Section p. Section p. Section p. Section p. Section p. Section p. Section p. Section
+ 	p. Section p. Section p. Section p. Section p. Section p. Section p. Section p. Section p. </p>
+	</section>
+
+	<section class="h2-section floating-subsection"><h1>TEST: Section h1</h1>
+	<p>Test: Section p. Section p. Section p. Section p. Section p. Section p. Section p. Section p. 
+	Section p. Section p. Section p. Section p. Section p. Section p. Section p. Section p. 
+	Section p. Section p. Section p. Section p. Section p. Section p. Section p. Section p. Section br </br>
+	Section p. Section p. Section p. Section p. Section p. Section p. Section p. Section p. Section p. Section
+ 	p. Section p. Section p. Section p. Section p. Section p. Section p. Section p. Section p. </p>
+	</section>
+
+</div>
+
+</section>
+
+
+<p>HERE</br>.</br>..</br>...</br>....</br></p>
+
+		<section class="h1-section"><a id="about"></a><h1>about</h1>
+<p>Like similar websites these pages serve a purpose and outline a fiction that pursues this purpose.</p>
+<p>Public because people ask for your website. These pages are more an extentsion of my notebook however than they are a dusty portfolio from 2007.</p>
+<p>As part of the vast not quite abandoned web, these pages are very likely to be a space of constant neglect.</p>
+</section>
+
+
+
+		<section class="h1-section"><a id="cv"></a><h1>cv</h1>
+		fp   -   pf
+
+<div class="center-container">
+<section class="h2-section floating-subsection"><h2>F. P.</h2>
+Munich, Bristol, London</br>
+Peter Fichtenwipfel (*)</br>
+Bristol Drawing Club</br>
+</section>
+<section class="h2-section floating-subsection"><h2>P. F.</h2>
+Empfangen als Hirnegspinnst.</br>
+Auf die Welt gekommen als Bemaler von Uhren.</br>
+Rasche Entwicklung vom einfachen Deckmantel zum konzeptuellen Alias.</br>
+Erweiterte kollektive Person fuer pervertierte Heimatkunst von Nicht-Heimatkuenstlern, mit dem Ziel Buchumschlaege fuer saemtliche waehrend der verbleibenden Lebensspanne dieses Erdballs moeglichen Ausgaben von Werken Peter Roseggers zu schaffen.</br>
+</section>
+</div>
+
+</section>
+
+
+
+		<section class="h1-section"><a id="statement"></a><h1>statement</h1>
+I am alive - I see, watch, feel, touch, discover, smell, taste, hear, listen</br>
+and therefore I, draw, build, form, carve, collect, assemble, invent, plan, experiment, think, write, code and occasionally paint</br>
+to cope, process and investigate the things that interest or bother me</br>
+but I do not create art on purpose</br>
+and most of the outcome of my way to process the world is only of interest to myself</br>
+as I mainly focus on the immediate problem I am investigating</br>
+and hardly ever care too much about the resulting 'piece'</br>
+</br>
+so I am not an artist</br>
+</br>
+I do not work towards my next exhibition</br>
+I do not stick to a style and theme that I have properly developed and that allows me to produce a steady output of sellable works for the galleries</br>
+I do not work until I have created a finished piece of work, but until I have satisfied my curiosity or solved a problem or found some answer to a question</br>
+</br>
+I tend to make great demands on art, which I mostly do not apply to my own work</br>
+because I do not create art on purpose
+</section>
+
+
+		<section class="h1-section"><a id="contact"></a><h1>contact</h1>
+</section>
+
+
+		<section class="h1-section"><a id="website"></a><h1>website</h1>
+<p>Links und Werbung stammen aus den neonerleuchteten Abgr&uuml;nden des Webs, aus den unterdr&uuml;ckt-verborgenen untersten Schichten an verkommenen Providern, Servern, verschmutzten Threads, Bots und Flatlines.</br>
+Dass dieses Netz-Gew&uuml;rm den Ort und die Zeit dieses Netzaufgebotes nutzt, um sich an die sichtbare Oberfl&auml;che zu winden ist nicht verwunderlich, aber auch nicht ertr&auml;glich. Abgestoßen wenden wir uns daher ab, entfernen uns von dem stinkenden verlinkten Material und verfluchen diese vergammelte schleimig-fruchtbare Vegetaion ()</p>
+<p>Sofern Teile oder einzelne Formulierungen dieser Seiten der imaginierten oder (scheinbar?) geltenden Welt- oder Realit&auml;tslage nicht, nicht mehr oder nicht vollst&auml;ndig entsprechen sollten, bleiben sie dennoch Teile des Dokumentes, in ihrem Inhalt und ihrer G&uuml;ltigkeit davon unber&uuml;hrt.</p>
+	
+|</br>
+|</br>
+|</br>
+|</br>
+|</br>
+|</br>
+¦</br>
+¦</br>
+¦</br>
+¦</br>
+¦</br>
+¦</br>
+¦</br>
+¦</br>
+¦</br>
+∇</br>
+	
+<p>Der Datenschutz besch&auml;mt uns wegen seiner Simplizit&auml;t, die unserem Zeitalter so uneigen ist. Daher wird kein Schutz gew&auml;hrt. Die Preisgabe irgendwelcher Daten seitens des einen, des anderen oder des Nutzers erfolgt entsprechend der geistigen Bindung oder Antipathie gegen&uuml;ber der eigenen Existenz. Die k&uuml;nstlerische Arbeit, die Integration, die Inanspruchnahme und Nutzung ist auch ohne Angabe solcher Daten bzw. unter Angabe anonymisierter Daten oder eines Pseudonyms erw&uuml;nscht, gestattet und anmutig.</p>
+<p>Rechte Dritter werden zu Rechten Vierter und F&uuml;nfter. Markenzeicheninhaber werden zu ihren eigenen Waren. Marken erlangen Identit&auml;t mit ihren Tr&auml;gern, werden mit ihnen sterblich.</p>
+</section>
+
+
+
+		<section class="h1-section"><a id="work"></a><h1>work ?</h1>
+
+<section class="h2-section">Flitzerianer (2000-2004)</section>
+
+<section class="h2-section">Marsmensch (2009)</section>
+<section class="h2-section">Flitzerianerorden</section>
+	
+<section class="h2-section">"Catering Trade"</section>
+
+
+<section class="h2-section">Paris-Athens, founding manifesto
+Urbanes Institut f&uuml;r De-Realisation (2004)
+
+[transcript]
+
+Gr&uuml;ndungs-Traktat
+des urbanen Instituts f&uuml;r De-Realisation.
+
+Das Institut tr&auml;gt die vorl&auml;ufige Bezeichnung urbanes Derealisations-Institut, ein Name muss erst noch gefunden werden. Es hat Sitz in M&uuml;nchen. Der erdachte Sitz des Instituts ist der Hauptbahnhof von Athen.
+
+Institutsmittel d&uuml;rfen nur f&uuml;r Institutszwecke verwendet werden. Eventuell anfallende Gewinne oder Verluste werden nach den f&uuml;r die einzelnen Projekte, Aktionen und Bereiche ausgehandelten Bestimmungen verteilt.
+   Der Zweck des Instituts ist es, vorhandene Infrastrukturen der Wirklichkeit f&uuml;r die Fiktion zu nutzen, und somit die T&uuml;ren zwischen der Realit&auml;t und der Fiktion so weit zu &ouml;ffnen, wie es nie zuvor geschehen ist. (Ne mets pas tes mains sur les portes, te risques de te pincer tres fort.) - d.h. das Institut zielt im End-Defekt auf Ver&auml;nderung von Welt.              Das Institut ist auf unbestimmte Zeit angelegt, da es sich der Unm&ouml;glichkeit der Erf&uuml;llung seines Zweckes bewusst ist, und in diesem Paradox seine Existenx begr&uuml;ndet, besteht es so lange der Zweck nicht realisierbar bleibt.
+   Die Arbeit des Instituts strebt nach keinerlei kommerziellen, politischen, ideologischen sonstigen Nutzen oder Zielen ausserhalb der eigenen Logik. Sie kann sich jedem, auch internen N&uuml;tzlichkeitsimperativ verweigern.
+   Die Themen, von denen die Arbeit des instituts ihren Ausgang nimmt, umfassen insbesondere die Information, die Kunst, die Realit&auml;t und die Fitkion, das Spiel. An was gearbeitet, was erforscht, erfunden oder produziert wird, darf nicht von vorneherein (heraus - hinten) als festgelegt gelten, die Ausdifferenzierung der Gegenstandsbereiche geschieht als Teil des Prozesses bei der Arbeit selbst.      Diese kann und soll sich aller Disziplinen und Quellen bedienen.
+   Unabh&auml;ngig von seiner Position oder T&auml;tigkeit ausserhalb des Instituts, wird jeder durch seine Arbeit am und im Institut - unabh&auml;ngig von der Art seiner Mitarbeit - zumindest w&auml;hrend dieser zum K&uuml;nstler, Schriftsteller, Wissenschaftler und Lehrer. (Ausser er lehnt oder sie lehnt dies ausdr&uuml;cklich ab).
+   Wichtige Stichworte sind Technik, Medien, Kultur, Wissen und schließlich bedingt auch Wissenschaft.
+
+Paris, den 29.8.2004
+
+I._FLORIAN POSSELT__  II. ___________________  Die Sektion des Wirkungsquantums Fernsehen wurde am selben Datum und Ort durch den zweiten Zeichnenden (le coquin de television) hinzugef&uuml;gt.</section>
+
+<section class="h2-section">Sea Bananas</section>
+
+</section>
+
+
+
+<section class="h1-section"><a id="projects"></a><h1>projects ?</h1>
+
+<section class="h2-section">fake art: the forger's delight</section>
+<section class="h2-section">Dilletanten erhebt Euch!</section>
+<section class="h2-section">The Bhutan Space Program (2013-2015)</section>
+<section class="h2-section">Wittgenstein Phrase Machine (*)</section>
+<section class="h2-section">blinds (2013*)</section>
+<section class="h2-section">Wiederbeschriftung des &ouml;ffentlichen Raumes</section>
+<section class="h2-section">Free Art at the Free Shop ()</section>
+
+<section class="h2-section">the line (2011*)</br>
+the line
+where the houses end and the sky begins
+is something that has been bothering me for quite a while
+	
+as 'horizon' it is an established concept and topos in art and thinking
+but as 'horizon' it is missing a lot of the qualities in which I am interested</section>
+
+<section class="h2-section">the door (2008)</section>
+<section class="h2-section">rust - Rost</section>
+
+</section>
+
+
+
+
+		<section class="h1-section">Hello</section>
+
+		<section class="h1-section">Hello</section>
+
+
+<div class="f_container">
+	<div class="f_top_bar"></div>
+	<div class="f_bottom_bar"></div>
+	<div class="f_right_bar"></div>
+	<div class="f_left_bar"></div>
+	<div class="f_left_top_corner"></div>
+	<div class="f_right_top_corner"></div>
+	<div class="f_left_bottom_corner"></div>
+	<div class="f_right_bottom_corner"></div>
+
+	<div class="f_content">
+		<blockquote>
+		Und eines Tages, als der Erdboden schon fest gefroren war, als das Moos unter den F&uuml;ßen knisterte und brach, da h&ouml;rten wir im Walde das Rauschen der S&auml;ge. Wie wir &uuml;ber die braunen Fichtenwipfel hinschauten, sahen wir aus denselben den gelblichen Spitzkegel eines hohen L&auml;rchenbaumes ragen. Das Rauschen der S&auml;ge verstummte, die Keilschl&auml;ge klangen, da neigte sich sachte der Kegel, tauchte nieder und im Erdboden war ein Zittern.
+		</blockquote>
+		<div class="quote_source">Peter Rosegger: <cite>Waldheimat</cite></div></div>
+</div>
+
+<div class="f_container">
+	<div class="f_top_bar"></div>
+	<div class="f_bottom_bar"></div>
+	<div class="f_right_bar"></div>
+	<div class="f_left_bar"></div>
+	<div class="f_left_top_corner"></div>
+	<div class="f_right_top_corner"></div>
+	<div class="f_left_bottom_corner"></div>
+	<div class="f_right_bottom_corner"></div>
+	<div class="f_content">
+<blockquote>
+Eine Woche brauchte ich, bis ihm die Zunge locker wurde. Es war eines Abends, in der Jagdh&uuml;tte. Das kleine L&auml;mpchen warf einen tr&uuml;ben Schein &uuml;ber die enge Stube. Wir hatten unser Nachtmahl schon eingenommen. Aber das Geschirr stand noch in Unordnung auf dem Herd. Die T&uuml;r war offen, um die Hitze hinauszulassen, die der Ofen gemacht hatte. Draußen im Dunkel sah man ein paar schwarze Fichtenwipfel des niederfallenden Berggeh&auml;nges und am stahlblauen Himmel drei unruhig flimmernde Sterne. Ein leises Rauschen war um die H&uuml;tte her.
+</blockquote>
+<div class="quote_source">Ludwig Ganghofer: <cite>Hochlandzauber</cite></div></div>
+</div>
+
+<div class="f_container">
+	<div class="f_top_bar"></div>
+	<div class="f_bottom_bar"></div>
+	<div class="f_right_bar"></div>
+	<div class="f_left_bar"></div>
+	<div class="f_left_top_corner"></div>
+	<div class="f_right_top_corner"></div>
+	<div class="f_left_bottom_corner"></div>
+	<div class="f_right_bottom_corner"></div>
+	<div class="f_content">
+<blockquote>
+Die Grundfesten der alten Glash&auml;user des Jodokus waren bei Wegr&auml;umungen wieder entdeckt worden, und man hatte darauf weiter gebaut. Da sie zur Besichtigung an den Platz gelangten, standen schon die luftigen Ger&uuml;ste da, nur das Glas mangelte und der Maueranwurf. Oben blickte der gr&uuml;ne Fichtenwipfel und die lustigen B&auml;nder. Nicht weit davon, im Parthenon, gingen die Schubkarren, um den Schutt und die Ziegel wegzuf&uuml;hren, und die gereinigten S&auml;ulen blickten wieder weiß und ruhig gegen die gr&uuml;ne Wiege ihres Tales.
+</blockquote>
+<div class="quote_source">Adalbert Stifter: <cite>Studien: Die Narrenburg</cite></div></div>
+</div>
+
+<div class="f_container">
+	<div class="f_top_bar"></div>
+	<div class="f_bottom_bar"></div>
+	<div class="f_right_bar"></div>
+	<div class="f_left_bar"></div>
+	<div class="f_left_top_corner"></div>
+	<div class="f_right_top_corner"></div>
+	<div class="f_left_bottom_corner"></div>
+	<div class="f_right_bottom_corner"></div>
+	<div class="f_content">
+<blockquote>
+So gem&uuml;tlich endet aber nicht jeder Pirschgang auf den singenden Hahn. Gar oft verdirbt die Bosheit des Wetters dem J&auml;ger nach schwerer M&uuml;he die ganze Jagd. Oder es will der Hahn trotz aller Gunst der Witterung nicht falzen; und da l&auml;sst er sich nicht einmal fragen, weshalb er nicht will – er macht sich eben unsichtbar. H&auml;ufig auch bringt sich der J&auml;ger durch eigene Schuld um den erhofften Erfolg; ein Schritt zuviel beim ‚Anspringen’, eine unvorsichtige Bewegung w&auml;hrend der Pausen, und der Hahn ist ‚vergr&auml;mt’; da heißt es dann vor dem misstrauisch gewordenen Vogel stehen wie eine Mauer, oft durch lange, endlos scheinende Minuten, ob einem auch die Knochen im Leibe zerbrechen m&ouml;chten; ein vorzeitiges Erm&uuml;den, ein einziges Wanken, und der Hahn ‚reitet’ dem J&auml;ger vor der Nase davon. Manchmal auch gelang das Anspringen vortrefflich, man steht schon in n&auml;chster N&auml;he des Falzbaumes. Aber kein Hahn ist zu sehen. Denn wie in der modernen Lyrik, so gibt es auch unter diesen Liebess&auml;ngern des Bergwaldes Idealisten und Pessimisten. Diese letzteren singen ihr Falzlied in gar melancholischem Ton, halten sich dabei in einem dichten Fichtenwipfel verborgen oder dr&uuml;cken sich w&auml;hrend des Falzens regungslos und weltschmerzlich an den Stamm der Buche, so dass nicht einmal das sch&auml;rfste J&auml;gerauge sie im D&auml;mmergrau von den dunklen Knorren des Baumes zu unterscheiden vermag. Sogar die extremen Realisten sind vertreten, die dem um ne Falzbaum schleichenden J&auml;ger zuweilen den anr&uuml;chigsten Naturalismus auf den Hut herunterdozieren.
+</blockquote>
+<div class="quote_source">Ludwig Ganghofer: <cite>Hubertusland</cite></div></div>
+</div>
+
+<div class="f_container">
+	<div class="f_top_bar"></div>
+	<div class="f_bottom_bar"></div>
+	<div class="f_right_bar"></div>
+	<div class="f_left_bar"></div>
+	<div class="f_left_top_corner"></div>
+	<div class="f_right_top_corner"></div>
+	<div class="f_left_bottom_corner"></div>
+	<div class="f_right_bottom_corner"></div>
+	<div class="f_content">
+<blockquote>
+<p>Talerblanke Sonnenkringel</p>
+<p>
+&uuml;ber stille Fichtenwipfel<br/>
+schwingt der Drossel Abenddank.<br/>
+Gold ges&auml;umt ergl&uuml;ht im Westen<br/>
+purpurn eine Wolkenbank.</p>
+<p>
+Talerblanke Sonnenkringel<br/>
+funkeln hell am Fichtenstamm.<br/>
+Und des Waldes sch&ouml;ne Blumen<br/>
+sind zu letzter Glut entflammt.</p>
+<p>
+Ringsum breiten k&uuml;hl und schweigend<br/>
+die B&auml;ume ihre Schatten hin.<br/>
+Und ich f&uuml;hle, stumm mich neigend,<br/>
+dass ich tief geborgen bin.</p>
+</blockquote>
+<div class="quote_source">Hans-Wilhelm Smolik</div></div>
+</div>
+
+<div class="f_container">
+	<div class="f_top_bar"></div>
+	<div class="f_bottom_bar"></div>
+	<div class="f_right_bar"></div>
+	<div class="f_left_bar"></div>
+	<div class="f_left_top_corner"></div>
+	<div class="f_right_top_corner"></div>
+	<div class="f_left_bottom_corner"></div>
+	<div class="f_right_bottom_corner"></div>
+	<div class="f_content">
+<blockquote>
+<p>Stern &uuml;ber der Lichtung</p>
+<p>
+Die Knechte f&auml;llen Baum um Baum im Wald,<br/>
+Wie Vogelnest, vom Herbste preisgegeben,<br/>
+So sichtbar ist nun unser Aufenthalt,<br/>
+Und alle schaun in unser Werktagsleben.</p>
+<p>
+Das leise, schaurige Gebraus ist stumm,<br/>
+Das unsre M&uuml;hen trug auf heiliger Schwinge,<br/>
+Wir m&uuml;ssen Feiern. Unsre Zeit ist um.<br/>
+Wir geht hinaus und z&auml;hlen Jahresringe,</p>
+<p>
+Halb trunken von des Harzes herbem Hauch.<br/>
+Doch w&auml;hrend wir die Silberzweige brechen<br/>
+Vom Fichtenwipfel zwischen Stein und Strauch,<br/>
+Scheint uns der Himmel heimlich zuzusprechen.</p>
+<p>
+Aus tiefem Abend gl&auml;nzt ein heller Stern,<br/>
+Den wir vor lauter Wald sonst nie gesehen.<br/>
+Er mahnt zur Heimkehr, und wir folgen gern.<br/>
+Wir m&uuml;ssen vor dem klaren Licht bestehen.</p>
+</blockquote>
+<div class="quote_source">Hans Carossa</div></div>
+</div>
+
+<div class="f_container">
+	<div class="f_top_bar"></div>
+	<div class="f_bottom_bar"></div>
+	<div class="f_right_bar"></div>
+	<div class="f_left_bar"></div>
+	<div class="f_left_top_corner"></div>
+	<div class="f_right_top_corner"></div>
+	<div class="f_left_bottom_corner"></div>
+	<div class="f_right_bottom_corner"></div>
+	<div class="f_content">
+<blockquote>
+<p>Alles still</p>
+<p>
+Alles still! Es tanzt den Reigen<br/>
+Mondenstrahl im Wald und Flur,<br/>
+Und dar&uuml;ber thront das Schweigen<br/>
+Und der Winterhimmel nur.</p>
+<p>
+Alles still! Vergeblich lauschet<br/>
+Man der Kr&auml;he heisrem Schrei,<br/>
+Keiner Fichte Wipfel rauschet<br/>
+Und kein B&auml;chlein summt vorbei.</p>
+<p>
+Alles still! Die Dorfes-H&uuml;tten<br/>
+Sind wie Gr&auml;ber anzusehen,<br/>
+Die, von Schnee bedeckt, inmitten<br/>
+Eines weiten Friedhofs stehn.</p>
+<p>
+Alles still! Nichts h&ouml;r ich klopfen<br/>
+Als mein Herz durch die Nacht; -<br/>
+Heiße Tr&auml;nen niedertropfen<br/>
+Auf die kalte Winterpracht.</p>
+</blockquote>
+<div class="quote_source">Theodor Fontane</div></div>
+</div>
+
+<div class="f_container">
+	<div class="f_top_bar"></div>
+	<div class="f_bottom_bar"></div>
+	<div class="f_right_bar"></div>
+	<div class="f_left_bar"></div>
+	<div class="f_left_top_corner"></div>
+	<div class="f_right_top_corner"></div>
+	<div class="f_left_bottom_corner"></div>
+	<div class="f_right_bottom_corner"></div>
+	<div class="f_content">
+<blockquote>
+Sagte mein Vater zum Weidknecht: »Franzel, du bist ein flinker Steiger. Kannst dir f&uuml;r deinen kommenden Ehestand ein Vergeltsgott erwerben, wenn du am Samstagfeierabend dem alten L&auml;ndhofer ein paar Graßb&auml;ume schnattest.«
+»'sselb' will ich schon tun,« antwortete der Franzel, der immer ein williger Mensch war und der hoch auf dem Fichtenwipfel eins zu jauchzen gedachte, so lange er noch Junggeselle t&auml;te sein auf der Welt im sonnigen Abendschein.
+</blockquote>
+<div class="quote_source">Peter Rosegger: <cite>Waldheimat</cite></div></div>
+</div>
+
+<div class="f_container">
+	<div class="f_top_bar"></div>
+	<div class="f_bottom_bar"></div>
+	<div class="f_right_bar"></div>
+	<div class="f_left_bar"></div>
+	<div class="f_left_top_corner"></div>
+	<div class="f_right_top_corner"></div>
+	<div class="f_left_bottom_corner"></div>
+	<div class="f_right_bottom_corner"></div>
+	<div class="f_content">
+<blockquote>
+Als die letzte Sparre aufgerichtet worden war, an welcher der Fichtenwipfel befestiget war, an dem die bunten B&auml;nder wallten, vorz&uuml;glich roth- und blauseiden – ich wußte damals noch nicht, warum diese Farben – als man unten die erste Latte angenagelt hatte, dann sogleich an ihr die n&auml;chst obere, und als es mit den vielen H&auml;nden, die besch&auml;ftigt waren, im Taktschlage rasch aufw&auml;rts ging, bis endlich die oberste und letzte am First befestigt war, und die drei Daraufschl&auml;ge als Zeichen, daß es nun vollendet sei, nach den rollenden Axtschl&auml;gen noch einzeln erschollen waren: da erhob sich ein Zimmergeselle neben dem Fichtenwipfel in seinem Sonntagsstaate, von dessen Hute zwei lange rothe und blaue seidene B&auml;nderenden herunter hingen, am Rande des Brettes stehend, das man &uuml;ber die obersten Querbalken der Sparren gelegt hatte, und sagte den Zimmermannsspruch auf uns herunter, die wir im Grase standen und hinauf schauten.
+</blockquote>
+<div class="quote_source">Adalbert Stifter: <cite>Studien - Die Mappe meines Urgroßvaters - 31</cite></div></div>
+</div>
+
+<div class="f_container">
+	<div class="f_top_bar"></div>
+	<div class="f_bottom_bar"></div>
+	<div class="f_right_bar"></div>
+	<div class="f_left_bar"></div>
+	<div class="f_left_top_corner"></div>
+	<div class="f_right_top_corner"></div>
+	<div class="f_left_bottom_corner"></div>
+	<div class="f_right_bottom_corner"></div>
+	<div class="f_content">
+<blockquote>
+Da faßte Peter Sterzinger mit den Zangen seiner F&auml;uste den Knecht am Hals. Und w&auml;hrend Schinagl in ein Schwanken geriet gleich einem Fichtenwipfel, mit dem ein Sturmwind t&auml;ndelt, schrie der Wildmeister: »Du Rindviech, du nichtsnutziges und gottverfluchtes! Dumm bist du wie Bohnenstroh! Aber ein Br&ouml;serl Treu und Redlichkeit h&auml;tt ich dir zugetraut! Du Mistschieber, du kotzmiserabliger!«
+</blockquote>
+<div class="quote_source">Ludwig Ganghofer: <cite>Der Mann im Salz.</cite></div></div>
+</div>
+
+<div class="f_container">
+	<div class="f_top_bar"></div>
+	<div class="f_bottom_bar"></div>
+	<div class="f_right_bar"></div>
+	<div class="f_left_bar"></div>
+	<div class="f_left_top_corner"></div>
+	<div class="f_right_top_corner"></div>
+	<div class="f_left_bottom_corner"></div>
+	<div class="f_right_bottom_corner"></div>
+	<div class="f_content">
+<blockquote>
+Die Felder liegen noch im Schnee, die Straßen sind grundlos, von oben scheint die Sonne, und auf den Fichtenwipfeln, die scharf und klar in den blauen Himmel hineinstehen, singen die Finken.
+</blockquote>
+<div class="quote_source">Peter Rosegger: <cite>Sonnenschein</cite></div></div>
+</div>
+
+<div class="f_container">
+	<div class="f_top_bar"></div>
+	<div class="f_bottom_bar"></div>
+	<div class="f_right_bar"></div>
+	<div class="f_left_bar"></div>
+	<div class="f_left_top_corner"></div>
+	<div class="f_right_top_corner"></div>
+	<div class="f_left_bottom_corner"></div>
+	<div class="f_right_bottom_corner"></div>
+	<div class="f_content">
+<blockquote>
+Nun, und wie war nach solcher Neujahrsnacht der erste Morgen? War er wirklich funkelnagelneu? Nein. Die Fensterscheiben hatten geradeso ihre Eisg&auml;rten, wie an gew&ouml;hnlichen Wintertagen. Die Sonne ging geradeso tr&uuml;b und tr&auml;ge auf, kroch geradeso kraftlos &uuml;ber die kahle Esche hin, kam geradeso sp&auml;t zu den Fichtenwipfeln und ging geradeso schl&auml;frig und fr&uuml;hzeitig zu Bette, wie gestern. Und doch – es war eine andere Sonne! Gestern konnte sie nicht empor, weil sie eine alte Frau war, heute kann sie nicht, weil sie noch ein Kind ist.
+</blockquote>
+<div class="quote_source">Peter Rosegger: <cite>Waldheimat</cite></div></div>
+</div>
+
+<div class="f_container">
+	<div class="f_top_bar"></div>
+	<div class="f_bottom_bar"></div>
+	<div class="f_right_bar"></div>
+	<div class="f_left_bar"></div>
+	<div class="f_left_top_corner"></div>
+	<div class="f_right_top_corner"></div>
+	<div class="f_left_bottom_corner"></div>
+	<div class="f_right_bottom_corner"></div>
+	<div class="f_content">
+<blockquote>
+<p>Kreuzburg</p>
+<p>
+Durch die Erinnerung wachsen<br/>
+die Weiden am Teich.<br/>
+Das Bootshaus verf&auml;llt.<br/>
+Im Uferschlamm schwappt der Laich.<br/>
+&uuml;ber das Pfarrhaus geschwenkt<br/>
+des Kirchendachs Schattenriß.<br/>
+Am Moosgem&auml;uer<br/>
+wehrte ich Tr&auml;nen und Bitternis.<br/>
+H&ouml;fe und Stadtrandgebiet,<br/>
+die sandigen G&auml;rten<br/>
+in Nesseln und Schutt.<br/>
+Vergaß ich den Pfiff der Gef&auml;hrten?<br/>
+Den Fichtenwipfel str&auml;hlen<br/>
+die Schwingen des Sturms.<br/>
+Im Abendrauch ragt<br/>
+das Doppeldach des Wasserturms.</p>
+</blockquote>
+<div class="quote_source">Heinz Piontek</div></div>
+</div>
+
+<div class="f_container">
+	<div class="f_top_bar"></div>
+	<div class="f_bottom_bar"></div>
+	<div class="f_right_bar"></div>
+	<div class="f_left_bar"></div>
+	<div class="f_left_top_corner"></div>
+	<div class="f_right_top_corner"></div>
+	<div class="f_left_bottom_corner"></div>
+	<div class="f_right_bottom_corner"></div>
+	<div class="f_content">
+<blockquote>
+<p>Ein verdorrter Baum</p>
+<p>
+Ein schiefer, tief geneigter,<br/>
+verdorrter Baum, er stand<br/>
+am Waldessaum, verloren<br/>
+am trocknen Straßenrand.</p>
+<p>
+Er hatte lang gerungen<br/>
+um Raum und Lebenslicht.<br/>
+Umsonst, die Fichtenwipfel<br/>
+um sich bezwang er nicht.</p>
+<p>
+Schau seine stille Trauer<br/>
+und spotte bitte nie,<br/>
+wenn eine Sehnsuchtsseele<br/>
+verzweifelnd bricht ins Knie!</p>
+</blockquote>
+<div class="quote_source">Hans-Wilhelm Smolik (1906 – 1962)</div></div>
+</div>
+
+<div class="f_container">
+	<div class="f_top_bar"></div>
+	<div class="f_bottom_bar"></div>
+	<div class="f_right_bar"></div>
+	<div class="f_left_bar"></div>
+	<div class="f_left_top_corner"></div>
+	<div class="f_right_top_corner"></div>
+	<div class="f_left_bottom_corner"></div>
+	<div class="f_right_bottom_corner"></div>
+	<div class="f_content">
+<blockquote>
+Er ließ der Stute die Z&uuml;gel schießen und begann ein tolles Rasen, umschimmert vom Gold der Abendsonne, die in einer Scharte der waldigen Vorberge schon hinuntertauchen wollte hinter die fein geschnittene S&auml;ge der fernen Fichtenwipfel.
+</blockquote>
+<div class="quote_source">Ludwig Ganghofer: <cite>Die Trutze von Trutzberg</cite></div></div>
+</div>
+
+<div class="f_container">
+	<div class="f_top_bar"></div>
+	<div class="f_bottom_bar"></div>
+	<div class="f_right_bar"></div>
+	<div class="f_left_bar"></div>
+	<div class="f_left_top_corner"></div>
+	<div class="f_right_top_corner"></div>
+	<div class="f_left_bottom_corner"></div>
+	<div class="f_right_bottom_corner"></div>
+	<div class="f_content">
+<blockquote>
+Etwas ungleich war ihm doch, dem Michelmachel, als er jetzt in der stillen, dunkeln Nacht &uuml;ber das Feld dahintrottete gegen den Schachen. Auf dem Kirchturme hatte es schon dreiviertel zu elf geschlagen. Etwas warm ward dem Michelmachel um die Brust und etwas eng. Schlecht Wetter wird, weil es so schw&uuml;l ist. Die Pfeife war ihm auch ausgegangen, er z&uuml;ndete sie wieder an. Er ging in den Wald, und beim Sternenschein, der zwischen den Fichtenwipfeln niederfloß, sah er bald das Hexenkreuz. Es war heute sehr hoch, und schien immer noch h&ouml;her zu wachsen.
+</blockquote>
+<div class="quote_source">Peter Rosegger: <cite>Die Abelsberger Chronik</cite></div></div>
+</div>
+
+<div class="f_container">
+	<div class="f_top_bar"></div>
+	<div class="f_bottom_bar"></div>
+	<div class="f_right_bar"></div>
+	<div class="f_left_bar"></div>
+	<div class="f_left_top_corner"></div>
+	<div class="f_right_top_corner"></div>
+	<div class="f_left_bottom_corner"></div>
+	<div class="f_right_bottom_corner"></div>
+	<div class="f_content">
+<blockquote>
+Ein &uuml;ber einer Forststraße aufgetauchtes M&auml;nnchen umkreiste vorerst singend kurz die verstummte Gesangsquelle in Baumkronenh&ouml;he, ehe es sich zu weiterem Gesang auf einem Fichtenwipfel niederließ.
+</blockquote>
+<div class="quote_source">Kurt Nadler: <cite>Sp&auml;twinterliche Eulenbeobachtungen im B&ouml;hmerwald, besonders zum Sperlingskauz (Glaucidium passerinum)</cite>
+<cite>Vogelkdl. Nachr. O&ouml;., Naturschutz aktuell 1994 II/l</cite></div></div>
+</div>
+
+<div class="f_container">
+	<div class="f_top_bar"></div>
+	<div class="f_bottom_bar"></div>
+	<div class="f_right_bar"></div>
+	<div class="f_left_bar"></div>
+	<div class="f_left_top_corner"></div>
+	<div class="f_right_top_corner"></div>
+	<div class="f_left_bottom_corner"></div>
+	<div class="f_right_bottom_corner"></div>
+	<div class="f_content">
+<blockquote>
+Zwischen diesen B&auml;umen hindurch wird das Auge auf die tiefer gelegenen Wald best&auml;nde geleitet. Spitz zulaufende Fichtenwipfel und runde Buchenkronen dr&auml;ngen sich dort in &uuml;ppiger F&uuml;lle lichtw&auml;rts. Ueber sie hinweg streift der Blick dann in die ferne Taltiefe, wo die hellen Wasser der Isar dahin str&ouml;men.
+</blockquote>
+<div class="quote_source">HEINRICH H&ouml;HN: <cite>STUDIEN ZUR ENTWICKELUNG DER M&uuml;NCHENER LANDSCHAFTSMALEREI VOM ENDE DES 18. UND VOM ANFANG DES 19. JAHRHUNDERTS</cite>
+<cite>Heft 108. STUDIEN ZUR Deutschen Kunstgeschichte</cite>: STRASSBURG: J. H. Ed. Heitz (Heitz & M&uuml;ndel) 1909</div></div>
+</div>
+
+<div class="f_container">
+	<div class="f_top_bar"></div>
+	<div class="f_bottom_bar"></div>
+	<div class="f_right_bar"></div>
+	<div class="f_left_bar"></div>
+	<div class="f_left_top_corner"></div>
+	<div class="f_right_top_corner"></div>
+	<div class="f_left_bottom_corner"></div>
+	<div class="f_right_bottom_corner"></div>
+	<div class="f_content">
+<blockquote>
+Das aufgetauchte Weibchen plaudert leise (wie "Subsong" einiger Singv&ouml;gel klingend) und fliegt einen Fichtenwipfel an, worauf sofort eine Kopulation erfolgt (10.18 Uhr).
+</blockquote>
+<div class="quote_source">Kurt Nadler: <cite>Sp&auml;twinterliche Eulenbeobachtungen im B&ouml;hmerwald, besonders zum Sperlingskauz (Glaucidium passerinum)</cite>
+<cite>Vogelkdl. Nachr. O&ouml;., Naturschutz aktuell 1994 II/l</cite></div></div>
+</div>
+
+
+
+
+-------------- about ---------------
+-----------------------------
+
+┅┅┅
+
+Î  î
+¦  |
+¦  |
+¦ Ÿ
+†
+^
+
+                              A
+                               |
+                               |
+------------------┘
+
+△
+ î
+ |
+ ¦
+ ¦
+ ¦
+└------------ »
+
+                                A
+═══════════╝
+▲
+
+------------┐
+                     |
+                    ∇
+
+
+
+		<footer>
+
+
+		</footer>
+		
+<!---		<script src="js/scripts.js"></div></script>  --->
+
+	</body>
+</html>
